@@ -86,5 +86,22 @@ VITE_FIREBASE_APP_ID=your_app_id
 VITE_FIREBASE_MEASUREMENT_ID=your_measurement_id
 
 ## Screenshot
-![image](https://github.com/user-attachments/assets/4da80284-b81e-4d97-b9eb-92e56cd492ee)
+![image](https://github.com/vik802207/Kanban-Project/blob/main/img/Screenshot%20(376).png)
+![image](https://github.com/vik802207/Kanban-Project/blob/main/img/Screenshot%20(377).png)
+![image](https://github.com/vik802207/Kanban-Project/blob/main/img/Screenshot%20(378).png)
+![image](https://github.com/vik802207/Kanban-Project/blob/main/img/Screenshot%20(379).png)
+![image](https://github.com/vik802207/Kanban-Project/blob/main/img/Screenshot%20(380).png)
+![image](https://github.com/vik802207/Kanban-Project/blob/main/img/Screenshot%20(381).png)
+![image](https://github.com/vik802207/Kanban-Project/blob/main/img/Screenshot%20(382).png)
+![image](https://github.com/vik802207/Kanban-Project/blob/main/img/Screenshot%20(383).png)
+![image](https://github.com/vik802207/Kanban-Project/blob/main/img/Screenshot%20(384).png)
+![image](https://github.com/vik802207/Kanban-Project/blob/main/img/Screenshot%20(385).png)
+![image](https://github.com/vik802207/Kanban-Project/blob/main/img/Screenshot%20(386).png)
+![image](https://github.com/vik802207/Kanban-Project/blob/main/img/Screenshot%20(387).png)
+
+## Firebase database
+
+![image](https://github.com/vik802207/Kanban-Project/blob/main/img/Screenshot%20(388).png)
+![image](https://github.com/vik802207/Kanban-Project/blob/main/img/Screenshot%20(389).png)
+
 
