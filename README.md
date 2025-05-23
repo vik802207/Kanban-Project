@@ -107,9 +107,6 @@ Pull requests are welcome. For major changes, open an issue first to discuss wha
 
 ## 📜 License
 This project is licensed under the MIT License.
-## 🔗 Live Demo
-👉 ChatGPT Clone Live
-## [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge)](https://magical-cat-74ec58.netlify.app/)
 
 ## 👨‍💻 Author
 Developed by Vikash Gupta
