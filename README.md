@@ -107,7 +107,9 @@ Pull requests are welcome. For major changes, open an issue first to discuss wha
 
 ## 📜 License
 This project is licensed under the MIT License.
-
+## 🔗 Live Demo
+👉 ChatGPT Clone Live
+## [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge)](https://kanban-project-pied.vercel.app/)
 ## 👨‍💻 Author
 Developed by Vikash Gupta
 📧 Contact: vikashg802207@gmail.com
