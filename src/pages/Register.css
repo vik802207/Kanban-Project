@@ -1,0 +1,115 @@
+/* Background */
+.fancy-body {
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Outer glow container */
+.glow-container {
+  padding: 30px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 60px rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  animation: pulse 6s infinite alternate;
+}
+
+/* Fancy form card */
+.fancy-glass-form {
+  max-width: 380px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  backdrop-filter: blur(30px);
+  color: #ffffff;
+}
+
+.fancy-glass-form h2 {
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+
+/* Inputs */
+.fancy-glass-form input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 12px 0;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.fancy-glass-form input::placeholder {
+  color: #ddd;
+}
+
+/* Glowing button */
+.glow-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  color: #fff;
+  background: linear-gradient(135deg, #354bba, #00d9f5);
+  box-shadow: 0 0 5px #5a89ee, 0 0 30px #4959ce;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.glow-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 5px #0f1fb1, 0 0 50px #3c48b6;
+}
+
+/* Google button */
+.google-btn {
+  margin-top: 12px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: #db4437;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.google-btn:hover {
+  background: #c1351d;
+}
+
+.divider {
+  margin: 20px 0;
+  color: #ccc;
+  font-weight: 300;
+}
+
+/* Animations */
+@keyframes pulse {
+  from {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+  }
+  to {
+    box-shadow: 0 0 60px rgba(255, 255, 255, 0.2);
+  }
+}

@@ -1,0 +1,478 @@
+/* Basic reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 3rem auto;
+  background: #fff;
+  border-radius: 20px;
+  padding: 2rem 3rem;
+  box-shadow:
+    0 8px 24px rgba(0,0,0,0.15),
+    inset 0 0 60px rgba(255,255,255,0.1);
+}
+
+/* Wallet section */
+.wallet-section {
+  background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+  border-radius: 20px;
+  padding: 2rem;
+  color: white;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  margin-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.wallet-section::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: -30%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.3), transparent 70%);
+  animation: rotate 20s linear infinite;
+  z-index: 0;
+  border-radius: 50%;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
+
+.wallet-section h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  position: relative;
+  z-index: 1;
+  letter-spacing: 1.2px;
+  text-shadow: 0 0 6px rgba(0,0,0,0.2);
+}
+
+.wallet-balance h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 0 4px rgba(0,0,0,0.15);
+}
+
+.wallet-balance p {
+  font-size: 3.6rem;
+  font-weight: 900;
+  margin: 0 0 1.5rem 0;
+  position: relative;
+  z-index: 1;
+  color: #b8f2e6;
+  text-shadow: 0 0 15px #b8f2e6;
+}
+
+.add-money {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.input-text {
+  border-radius: 30px;
+  padding: 0.7rem 1.8rem;
+  font-size: 1.2rem;
+  border: none;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  width: 180px;
+  transition: box-shadow 0.3s ease;
+}
+
+.input-text:focus {
+  outline: none;
+  box-shadow: 0 0 25px #43cea2;
+  background: #e0f7f1;
+}
+
+.btn {
+  border-radius: 30px;
+  padding: 0.8rem 2.5rem;
+  font-weight: 700;
+  font-size: 1.15rem;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.btn-green {
+  background: #43cea2;
+  color: white;
+  box-shadow: 0 0 12px #43cea2;
+}
+
+.btn-green:hover {
+  background: #2da68d;
+  box-shadow: 0 0 20px #2da68d;
+  transform: translateY(-3px);
+}
+
+/* Header */
+.header h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 0.2rem;
+  color: #222;
+  letter-spacing: 0.05em;
+}
+
+.header .subtitle {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #555;
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
+
+/* Board selector */
+.board-selector {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.input-select {
+  border-radius: 25px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.1rem;
+  border: 2px solid #aaa;
+  min-width: 200px;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+}
+
+.input-select:hover,
+.input-select:focus {
+  border-color: #764ba2;
+  box-shadow: 0 0 15px #764ba2aa;
+  outline: none;
+}
+
+.input-text {
+  min-width: 220px;
+  border: 2px solid #aaa;
+  transition: border-color 0.3s ease;
+}
+
+.input-text:hover,
+.input-text:focus {
+  border-color: #764ba2;
+  box-shadow: 0 0 15px #764ba2aa;
+  outline: none;
+}
+
+.btn-green {
+  background: #764ba2;
+  box-shadow: 0 0 15px #764ba2;
+}
+
+.btn-green:hover {
+  background: #5a3579;
+  box-shadow: 0 0 20px #5a3579;
+}
+
+/* New Task Form */
+.new-task-form {
+ background: linear-gradient(135deg, #597a8b 0%, #185a9d 100%);
+  padding: 2rem 3rem;
+  border-radius: 25px;
+  box-shadow: 0 8px 25px rgba(118, 75, 162, 0.2);
+  margin-bottom: 3rem;
+}
+
+.new-task-form h2 {
+  font-weight: 900;
+  font-size: 2rem;
+  color: #d4c7e1;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.06em;
+}
+
+.input-textarea {
+  width: 100%;
+  border-radius: 20px;
+  border: 2px solid #aaa;
+  padding: 1rem 1.3rem;
+  font-size: 1.1rem;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+  margin-bottom: 1.2rem;
+}
+
+.input-textarea:hover,
+.input-textarea:focus {
+  border-color: #764ba2;
+  box-shadow: 0 0 20px #764ba2aa;
+  outline: none;
+}
+
+/* Task List */
+.task-list h2 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 2.2rem;
+  color: #764ba2;
+  margin-bottom: 2rem;
+  letter-spacing: 0.06em;
+}
+
+.task-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.task-item {
+  background: #f3e8ff;
+  border-radius: 20px;
+  margin-bottom: 1.2rem;
+  padding: 1.4rem 1.8rem;
+  box-shadow: 0 10px 30px rgba(118, 75, 162, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: grab;
+}
+
+.task-item:hover {
+  box-shadow: 0 15px 35px rgba(118, 75, 162, 0.3);
+  transform: translateY(-4px);
+}
+
+.task-info {
+  flex-grow: 1;
+  font-weight: 600;
+  color: #4c1d95;
+  font-size: 1.15rem;
+  user-select: none;
+}
+
+.task-actions {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.task-actions button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #7c3aed;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.task-actions button:hover {
+  color: #4c1d95;
+  transform: scale(1.15);
+}
+
+/* Add Task Button */
+.btn-blue {
+  background: #7c3aed;
+  color: white;
+  box-shadow: 0 0 20px #7c3aedaa;
+  border-radius: 30px;
+  padding: 0.9rem 3rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  display: block;
+  margin: 1rem auto 0 auto;
+}
+
+.btn-blue:hover {
+  background: #5b21b6;
+  box-shadow: 0 0 25px #5b21b6aa;
+  transform: translateY(-4px);
+}
+.btn-fancy-upload {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #7c3aed, #b794f4);
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 0.7rem 1.8rem;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(124, 58, 237, 0.6);
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  user-select: none;
+  border: none;
+  outline: none;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.btn-fancy-upload:hover {
+  background: linear-gradient(135deg, #5b21b6, #a78bfa);
+  box-shadow: 0 8px 25px rgba(91, 33, 182, 0.8);
+  transform: translateY(-3px);
+}
+
+.btn-fancy-upload:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(91, 33, 182, 0.6);
+}
+
+/* Optional: add a subtle icon scale on hover */
+.btn-fancy-upload:hover svg {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+.btn-edit,
+.btn-delete {
+  padding: 8px 18px;
+  font-weight: 700;
+  margin: 12px;
+  font-size: 0.95rem;
+  border-radius: 18px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  user-select: none;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  min-width: 70px;
+}
+
+.btn-edit {
+  background: linear-gradient(135deg, #facc15, #ca8a04);
+  box-shadow: 0 6px 20px rgba(250, 204, 21, 0.6);
+}
+
+.btn-edit:hover {
+  background: linear-gradient(135deg, #ca8a04, #a16207);
+  box-shadow: 0 10px 30px rgba(161, 98, 7, 0.7);
+  transform: translateY(-3px);
+}
+
+.btn-delete {
+  background: linear-gradient(135deg, #dc2626, #991b1b);
+  box-shadow: 0 6px 20px rgba(220, 38, 38, 0.6);
+}
+
+.btn-delete:hover {
+  background: linear-gradient(135deg, #991b1b, #7f1d1d);
+  box-shadow: 0 10px 30px rgba(127, 29, 29, 0.7);
+  transform: translateY(-3px);
+}
+
+/* Inputs & textarea */
+.fancy-input,
+.fancy-select,
+.fancy-textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 2px solid #e2e8f0;
+  font-size: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #0f172a;
+  background: #f9fafb;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: inset 0 1px 3px rgb(0 0 0 / 0.1);
+}
+
+.fancy-input:focus,
+.fancy-select:focus,
+.fancy-textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  background: white;
+  box-shadow: 0 0 10px #2563ebaa;
+}
+
+/* Labels */
+.fancy-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #334155;
+  font-size: 0.95rem;
+}
+
+/* Button container */
+.button-group {
+  margin-top: 1rem;
+  display: flex;
+  gap: 12px;
+}
+
+/* Save Button */
+.btn-save {
+  flex: 1;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  border-radius: 20px;
+  font-weight: 700;
+  padding: 10px 0;
+  font-size: 1.1rem;
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.btn-save:hover {
+  background: linear-gradient(135deg, #1e40af, #1e3a8a);
+  box-shadow: 0 10px 30px rgba(30, 58, 138, 0.8);
+  transform: translateY(-3px);
+}
+
+/* Cancel Button */
+.btn-cancel {
+  flex: 1;
+  background: linear-gradient(135deg, #9ca3af, #6b7280);
+  color: white;
+  border-radius: 20px;
+  font-weight: 700;
+  padding: 10px 0;
+  font-size: 1.1rem;
+  box-shadow: 0 6px 20px rgba(156, 163, 175, 0.6);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.btn-cancel:hover {
+  background: linear-gradient(135deg, #6b7280, #4b5563);
+  box-shadow: 0 10px 30px rgba(75, 85, 99, 0.8);
+  transform: translateY(-3px);
+}
+
+
+
