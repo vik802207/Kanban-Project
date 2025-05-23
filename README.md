@@ -2,8 +2,6 @@
 
 **TaskFlow** is a beautifully designed and fully functional task management dashboard built with **React**. It allows users to create and manage tasks with drag-and-drop reordering, user assignment, file attachments, due dates, and Razorpay-powered wallet functionality for virtual credits.
 
-![TaskFlow Screenshot](./screenshot.png)
-
 ---
 
 ## ✨ Features
@@ -104,4 +102,16 @@ VITE_FIREBASE_MEASUREMENT_ID=your_measurement_id
 ![image](https://github.com/vik802207/Kanban-Project/blob/main/img/Screenshot%20(388).png)
 ![image](https://github.com/vik802207/Kanban-Project/blob/main/img/Screenshot%20(389).png)
 
+## 🤝 Contributing
+Pull requests are welcome. For major changes, open an issue first to discuss what you would like to change.
+
+## 📜 License
+This project is licensed under the MIT License.
+## 🔗 Live Demo
+👉 ChatGPT Clone Live
+## [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge)](https://magical-cat-74ec58.netlify.app/)
+
+## 👨‍💻 Author
+Developed by Vikash Gupta
+📧 Contact: vikashg802207@gmail.com
 
