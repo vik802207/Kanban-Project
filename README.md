@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# 🧠 TaskFlow - React Task Management Dashboard ✅
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**TaskFlow** is a beautifully designed and fully functional task management dashboard built with **React**. It allows users to create and manage tasks with drag-and-drop reordering, user assignment, file attachments, due dates, and Razorpay-powered wallet functionality for virtual credits.
 
-## Available Scripts
+![TaskFlow Screenshot](./screenshot.png)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- ✅ **Board and Task Management**
+  - Create and switch between multiple boards.
+  - Add, edit, and delete tasks with rich details (title, description, due date, assignee, and attachments).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 🧲 **Drag and Drop Tasks**
+  - Seamless task reordering using [`@dnd-kit`](https://github.com/clauderic/dnd-kit).
 
-### `npm test`
+- 👥 **User Assignment**
+  - Assign tasks to registered users via Firebase Authentication.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 📎 **Attachments**
+  - Upload and manage task files through Firebase Storage.
 
-### `npm run build`
+- 💸 **Razorpay Wallet Integration**
+  - Add virtual currency to user accounts with Razorpay.
+  - Wallet balance is synced and stored using Firestore.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 🎨 **Custom Stylish UI**
+  - Clean and responsive UI with handcrafted CSS.
+  - No UI frameworks like Tailwind or Bootstrap — 100% custom style.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 Getting Started
 
-### `npm run eject`
+### 1. Clone the Repo
+git clone https://github.com/your-username/taskflow-dashboard.git
+cd taskflow-dashboard
+## 🧱 Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Frontend:** [React](https://reactjs.org/)
+- **Backend / Auth / Storage:** [Firebase](https://firebase.google.com/) (Firestore, Auth, Storage)
+- **Payments:** [Razorpay JS SDK](https://razorpay.com/docs/)
+- **Drag-and-Drop:** [`@dnd-kit`](https://github.com/clauderic/dnd-kit)
+- **Styling:** Handcrafted custom CSS (no frameworks)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- ## 📁 Folder Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+src/
+├── components/
+│   ├── BoardSelector.jsx
+│   ├── TaskEditor.jsx
+│   ├── SortableTask.jsx
+│   └── AttachmentsUploader.jsx
+├── pages/
+│   └── Dashboard.jsx
+├── services/
+│   ├── firebase.js
+│   └── razorpay.js
+├── App.jsx
+├── main.jsx
+└── styles/
+    └── global.css
+📄 License
+MIT © Your Name
+## Install Dependencies
+npm install
+npm start
+### 3. Set Up Firebase
 
-## Learn More
+1. Create a Firebase project at [firebase.google.com](https://firebase.google.com).
+2. Enable the following Firebase services:
+   - **Firestore Database**
+   - **Firebase Authentication**
+   - **Firebase Storage**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. In the root of your project, create a `.env` file and add your Firebase credentials:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+VITE_FIREBASE_API_KEY=your_api_key
+VITE_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=your_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+VITE_FIREBASE_APP_ID=your_app_id
+VITE_FIREBASE_MEASUREMENT_ID=your_measurement_id
 
-### Code Splitting
+## Scrennshot
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
